@@ -96,7 +96,7 @@ function deleteRecord(name, id) {
         $.ajax({
             dataType:'json',
             type : "DELETE",
-            url: providerUrl + '/sobjects/Account/' + id + '?dfpapikey=b5e9610f7d7170e5c6bb6d7c56014e5e',
+            url: providerUrl + 'sobjects/Account/' + id + '?dfpapikey=b5e9610f7d7170e5c6bb6d7c56014e5e',
             cache:false,
             success:function (response) {
                 getRecords();
@@ -114,8 +114,8 @@ function buildItemList(json) {
 
     console.log(json);
     var html = '';
-    if (json.record) {
-        json.record.forEach(function (entry) {
+    if (json.details.records) {
+        json.details.records.forEach(function (entry) {
             var name = entry.Name;
             var id = entry.Id;
             html += '<tr>';
