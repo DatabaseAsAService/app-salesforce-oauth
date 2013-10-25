@@ -8,7 +8,7 @@ window.onload = function () {
     // if app files hosted on DSP then use location.host
     var dsp_url = location.protocol + "//" +location.host + "/rest/api_docs";
     // if app files not hosted on DSP then replace this dsp_url with yours ( leave the /rest/api_docs part )
-    var dsp_url = "https://next.cloud.dreamfactory.com/rest/api_docs";
+    //var dsp_url = "https://<yourdsp>.cloud.dreamfactory.com/rest/api_docs";
 
     //replace this app_name with yours
     var app_name = "salesforceoauth";
