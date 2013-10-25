@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <link type="text/css" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css"
+          rel="stylesheet">
+    <link type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+          rel="stylesheet">
+    <link type="text/css" href="style.css" rel="stylesheet">
+</head>
+<body><div id="loading" class="hide"><i class="icon-spinner icon-spin icon-4x"></i></div>
+<h4>My Account List</h4>
+<div id="list-container">
+    <table class="table table-hover table-striped table-bordered todolist">
+    </table>
+</div>
+<input type="text" id="itemname" placeholder="Add Account"/>
+<br/>
+<button id="additem" class="btn btn-primary">Add Account</button>
+<div id="loginDialog" class="modal fade hide">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                        onclick="clearLogIn()">&times;</button>
+                <h3>Sign In</h3>
+            </div>
+            <div class="alert-area">
+                <div class="alert alert-block" id="loginErrorMessage"></div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body-form">
+                    <input placeholder="Email Address" type="email" class="input-xlarge" name="UserEmail"
+                           id="UserEmail" />
+                    <input placeholder="Password" type="password" class="input-xlarge" name="Password" id="Password"
+                           value="" />
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" onclick="logIn()">Sign In</button>
+        </div>
+    </div>
+</div>
+<script src='lib/shred.bundle.js' type='text/javascript'></script>
+<script src='lib/swagger.js' type='text/javascript'></script>
+<script src='lib/sdk-init.js' type='text/javascript'></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+<script src='app.js' type='text/javascript'></script>
+</body>
+</html>

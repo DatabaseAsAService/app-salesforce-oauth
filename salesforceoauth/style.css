@@ -1,0 +1,103 @@
+body {
+    padding:20px;
+}
+
+.todolist span {
+    color:#777;
+}
+
+.todolist {
+    margin-bottom:0px;
+}
+
+#list-container {
+    max-height:200px;
+    overflow:auto;
+    margin-bottom:20px;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+.btn-signin {
+    width: auto;
+}
+
+.modal {
+
+}
+
+.modal-header {
+    font-family:   'Lato', sans-serif;
+    font-weight:   400;
+    border-radius: 0 0 0 0;
+    background:    #AA2700;
+    border:        1px solid #AA2700;
+}
+
+.modal-header h3 {
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .8);
+    color:       white;
+    font-size:   18pt;
+}
+
+.alert-area {
+    margin: 20px;
+}
+
+.alert-area .alert {
+    padding: 8px 14px;
+}
+
+.modal-body {
+    padding-top:  0;
+    max-height: 300px;
+    overflow-y:   auto;
+    margin-right: 4px;
+}
+
+.modal-body .alert-error p {
+    margin-top: 2px;
+}
+
+.modal-body-form {
+    display:    block;
+    text-align: left;
+    margin:     0 8px;
+}
+
+.modal-body-form label {
+    font-family:   "Open Sans", "Helvetica Neue Light", 'Arial', sans-serif;
+    font-weight:   bold;
+    text-align:    left;
+    margin-bottom: 2px;
+    font-size:     12pt;
+}
+
+.modal-body-form .input-xlarge {
+    width: 96%;
+}
+
+.modal-footer {
+    border-radius: 0 0 0 0;
+}
+
+#loading {
+    width:            50px;
+    height:           50px;
+    background-color: #E78F1E;
+    position:         absolute;
+    left:             50%;
+    top:              25%;
+    z-index:          999999;
+    border:           1px solid #c1680e;
+    border-radius:    6px;
+    box-shadow:       0 0 12px rgba(0, 0, 0, .6);
+    padding:          8px;
+    margin:           -33px auto 0 -33px;
+}
+
+#loading .icon-spinner {
+    color: #fff;
+}

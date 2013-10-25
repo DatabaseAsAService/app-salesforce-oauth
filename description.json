@@ -1,0 +1,8 @@
+{
+	"api_name":"salesforceoauth",
+	"name":"Salesforce OAuth",
+	"description":"A sample app showing how to OAuth to Salesforce.",
+	"is_active":1,
+	"url":"/index.html",
+	"is_url_external":0
+}

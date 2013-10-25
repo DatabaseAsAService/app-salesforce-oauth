@@ -1,0 +1,52 @@
+{
+    "table": [
+        {
+            "name": "Account",
+            "label": "Account",
+            "plural": "Accounts",
+            "primary_key": "Id",
+            "field": [
+                {
+                    "name": "Id",
+                    "label": "Record ID",
+                    "type": "id"
+                },
+                {
+                    "name": "Name",
+                    "label": "Name",
+                    "type": "string",
+                    "length": 80,
+                    "allow_null": false
+                },
+                {
+                    "name": "CreatedById",
+                    "label": "Created By ID",
+                    "type": "user_id_on_create",
+                    "validation": "api_read_only",
+                    "allow_null": false
+                },
+                {
+                    "name": "CreatedDate",
+                    "label": "Created Date",
+                    "type": "timestamp_on_create",
+                    "validation": "api_read_only",
+                    "allow_null": false
+                },
+                {
+                    "name": "LastModifiedById",
+                    "label": "Last Modified By ID",
+                    "type": "user_id_on_update",
+                    "validation": "api_read_only",
+                    "allow_null": false
+                },
+                {
+                    "name": "LastModifiedDate",
+                    "label": "Last Modified Date",
+                    "type": "timestamp_on_update",
+                    "validation": "api_read_only",
+                    "allow_null": false
+                }
+            ]
+        }
+    ]
+}
