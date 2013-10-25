@@ -142,10 +142,10 @@ function oauthError(responseText) {
 
     if (responseText) {
         try {
-            var _data = JSON.parse(xhr.responseText);
+            var _data = JSON.parse(responseText);
             if (_data && _data.details) {
                 if (_data.details.location) {
-                    window.location = _data.details.location;
+                    window.location = _data.details.location + '&redirect_uri=' + encodeURIComponent(window.location.href);
                 } else {
                     if (_data.details.message) {
                         crudError(_data.details.message);
